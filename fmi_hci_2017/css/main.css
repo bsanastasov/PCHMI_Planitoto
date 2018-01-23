@@ -1,0 +1,31 @@
+@media (min-width: 768px) {
+
+    .navbar-nav>li>a {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    nav.main-nav {
+        /*margin-top: 70px;*/
+        height: 38px;
+        min-height: 38px;
+    }
+
+    div.main-logo img {
+        margin-left: 20px;
+        max-height: 70px;
+    }
+}
+img.fb-logo {
+  max-height: 30px;
+  max-width: auto;
+}
+div.less-padding {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+div.list-item-image img {
+  height: 150px;
+  width: auto;
+}

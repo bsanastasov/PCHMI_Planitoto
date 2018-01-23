@@ -1,0 +1,366 @@
+<html lang="bg">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <!-- CDN resources -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/css/tether.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <title>Planitoto</title>
+  </head>
+
+  <body>
+
+        <script>
+            function myFunction() {
+
+               var input, filter, id, h3;
+                input = document.getElementById("myInput");
+                filter = input.value;
+                $(".panel-default").hide();
+                $(".panel-default").each(function(index,item){
+                    if (~item.id.indexOf(filter)) {
+                      $(item).show();
+                    }
+                });
+            }
+
+                function run() {
+                    //  document.getElementById("srt").value = document.getElementById("sel1").value;
+                    var val = document.getElementById("sel1").value;
+
+                    var itemlist = document.getElementsByClassName("panel panel-default");
+                    var i;
+                    for (i = 0; i < itemlist.length; i++) {
+                       document.getElementById("srt").value = itemlist[i].name;
+                    }
+
+                  }
+        </script>
+
+    <div class="main-logo col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+      <a href="./index.html">
+        <img class="image-responsive" src="img/logo.png"/>
+      </a>
+    </div>
+    <nav class="navbar navbar-default main-nav col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Начало<span class="sr-only">(current)</span></a></li>
+            <li><a href="marshruti.html">Маршрути</a></li>
+            <li class="active"><a href="hiji.html">Хижи</a></li>
+            <li><a href="#">Вход с Facebook</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-12 col-lg-offset-2 col-md-offset-2">
+          <!-- filters -->
+          <div class="row filters">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="form-group">
+                  <select class="form-control" id="sel1" onchange="run()">
+                    <option value="">Избери регион</option>
+                    <option>Пирин</option>
+                    <option>Родопи</option>
+                    <option>Стара планина</option>
+                    <option>Рила</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="form-group">
+                  <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 less-padding">
+                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Търсете по име" class="form-control" title="Type in a name">
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 less-padding">
+                    <button type="button" class="btn btn-default">Търси</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        <!-- /filters -->
+
+
+        <div class="item-list">
+          <div attr-region="Пирин">
+          <div class="panel panel-default" id="Хижа Безбог" name="Пирин">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 list-item-image">
+                  <img class="img-responsive" src="img/hiji/1.jpg">
+                </div>
+
+                <div class="col-xl-10 col-lg-9 col-md-9 col-sm-9 col-xs-9 list-item-desc">
+                  <h3>Хижа Безбог<a href="hija_detail.html" role="button" class="btn btn-default pull-right">Разгледай</a></h3>
+                  <p>
+                    Хижа Безбог е най-новата и модерна хижа в Пирин, една от трите разположени на Полежанското странично било.
+                    От хижа Безбог може да се стигне до: връх Безбог – 50 мин.; връх Полежан – 2 ч.;
+                    Попово езеро – 1,20 ч.; хижа Пирин – 6 ч.; хижа Демяница – 4,30 ч.; заслон Тевно езеро – 4 ч.
+                    Еднодневни преходи могат да се направят също до Кременски езера, връх Джангал и Стражите.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default" id="Хижа Бъндерица" name="Пирин">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 list-item-image">
+                  <img class="img-responsive" src="img/hiji/bunderica.jpg" >
+                </div>
+
+                <div class="col-xl-10 col-lg-9 col-md-9 col-sm-9 col-xs-9 list-item-desc">
+                  <h3>Хижа Бъндерица<a href="hija_detail.html" role="button" class="btn btn-default pull-right">Разгледай</a></h3>
+                  <p>
+                      Разположена е на левия бряг на р.Бъндерица. Новата хижа е масивна триетажна сграда с капацитет 95 места с външни и вътрешни санитарни възли и умивални. Електрифицирана е , отоплението е централно. Старата хижа е масивна двуетажна сграда с капацитет 73 места с външни санитарни възли и умивални. Електрифицирана и водоснабдена, има туристическа кухня и столова. В района се ползват и бунгала с капацитет 30 легла. Санитарните възли и умивални са външни. Електрифицирани са , отоплението е с електрически печки. Има паркинг.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="panel panel-default" id="Хижа Демяница">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 list-item-image">
+                  <img class="img-responsive" src="img/hiji/demianitsa1.jpg">
+                </div>
+
+                <div class="col-xl-10 col-lg-9 col-md-9 col-sm-9 col-xs-9 list-item-desc">
+                  <h3>Хижа Демяница<a href="hija_detail.html" role="button" class="btn btn-default pull-right">Разгледай</a></h3>
+                  <p>
+
+                    Разположена е на водослива на реките Стражишка, Валявишка и Василашка, сред иглолистна гора. Предаставлява масивна двуетажна сграда. Допълнително има и 14 бунгала. Общият капацитет е 217 места. Разполага с туристическа кухня, столова и лафка. Санитарните възли са външни. Хижата е електрифицирана от агрегат и ВЕЦ и водоснабдена, отоплението е с печки на твърдо гориво.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default" id="Хижа Гоце Делчев">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 list-item-image">
+                  <img class="img-responsive" src="img/hiji/gocedelchev.jpg">
+                </div>
+
+                <div class="col-xl-10 col-lg-9 col-md-9 col-sm-9 col-xs-9 list-item-desc">
+                  <h3>Хижа Гоце Делчев<a href="hija_detail.html" role="button" class="btn btn-default pull-right">Разгледай</a></h3>
+                  <p>
+                    Разположена е в м.Логовото. Предаставлява масивна двуетажна сграда с капацитет 36 места с вътрешни санитарни възли и бани. Бунгалата са с капацитет 70 места с външни санитарни възли. Хижата е електрифицирана и водоснабдена, отоплението е с печки на твърдо гориво.
+                    Има паркинг за автомобили.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div attr-region="Родопи">
+          <div class="panel panel-default" id="Хижа Аида">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 list-item-image">
+                  <img class="img-responsive" src="img/hiji/aida.jpg">
+                </div>
+
+                <div class="col-xl-10 col-lg-9 col-md-9 col-sm-9 col-xs-9 list-item-desc">
+                  <h3>Хижа Аида<a href="hija_detail.html" role="button" class="btn btn-default pull-right">Разгледай</a></h3>
+                  <p>
+                      Намира се в рида Мечковец, в подножието на едноименния връх. Представлява масивна двуетажна сграда с капацитет 45 места с външни санитарни възли и вътрешни умивални и бани. Сградата е водоснабдена и електрифицирана, отоплението е с печки на ток и на твърдо гориво. Разполага с туристическа кухня и столова. Пътят до хижата е асфалтиран, има паркинг.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="panel panel-default" id="Хижа Белите Брези">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 list-item-image">
+                  <img class="img-responsive" src="img/hiji/belitebrezi.jpg">
+                </div>
+
+                <div class="col-xl-10 col-lg-9 col-md-9 col-sm-9 col-xs-9 list-item-desc">
+                  <h3>Хижа Белите Брези<a href="hija_detail.html" role="button" class="btn btn-default pull-right">Разгледай</a></h3>
+                  <p>
+                      Намира се в едноименната местност, източно от гр.Ардино. Представлява масивна двуетажна сграда с капацитет 31 места с вътрешни санитарни възли и бани. Сградата е водоснабдена, електрифицирана, отоплението е с печки на твърдо гориво. Разполага с туристическа кухня, столова и лафка. Пътят до хижата е асфалтиран, има паркинг.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default" id="Хижа Безово">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 list-item-image">
+                  <img class="img-responsive" src="img/hiji/bezovo.jpg">
+                </div>
+
+                <div class="col-xl-10 col-lg-9 col-md-9 col-sm-9 col-xs-9 list-item-desc">
+                  <h3>Хижа Безово<a href="hija_detail.html" role="button" class="btn btn-default pull-right">Разгледай</a></h3>
+                  <p>
+                      Намира се в м.Безово. Представлява масивна двуетажна сграда с капацитет 40 места
+с външни санитарни възли и умивални. Хижата е водоснабдена и електрифицирана,
+отоплението е с печки на твърдо гориво. Разполага с туристическа кухня и столова.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+          <div attr-region="Стара планина">
+          <div class="panel panel-default" id="Хижа Бачо Киро">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 list-item-image">
+                  <img class="img-responsive" src="img/hiji/bachokiro.JPG">
+                </div>
+
+                <div class="col-xl-10 col-lg-9 col-md-9 col-sm-9 col-xs-9 list-item-desc">
+                  <h3>Хижа Бачо Киро<a href="hija_detail.html" role="button" class="btn btn-default pull-right">Разгледай</a></h3>
+                  <p>
+                      Разположена е край Дряновския манастир. Представлява масивна двуетажна сграда с капацитет 85 места с етажни санитарни възли и бани. Сградата е водоснабдена и електрифицирана, с централно отопление. Хижата разполага с безжичен интернет. Разполага с ресторант, лавка и кафе-аперитив. Пътят до хижата е асфалтиран, има паркинг.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default" id="Хижа Бенковски">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 list-item-image">
+                  <img class="img-responsive" src="img/hiji/benkovski.jpg">
+                </div>
+
+                <div class="Стара планина">
+                <div class="col-xl-10 col-lg-9 col-md-9 col-sm-9 col-xs-9 list-item-desc">
+                  <h3>Хижа Бенковски<a href="hija_detail.html" role="button" class="btn btn-default pull-right">Разгледай</a></h3>
+                  <p>
+                    Намира се в югозападното подножие на вр.Ушите. Представлява двуетажна постройка с капацитет 60 места с вътрешни санитарни възли и умивални. Сградата е водоснабдена, електрифицирана от агрегат и ВЕЦ, отоплението е с печки на твърдо гориво. Разполага с туристическа кухня, столова и лафка.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+</div>
+</div>
+</div>
+
+
+
+          <div attr-region="Рила">
+          <div class="panel panel-default" id="Хижа Мальовица">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 list-item-image">
+                  <img class="img-responsive" src="img/hiji/maliovica.jpg">
+                </div>
+
+                <div class="col-xl-10 col-lg-9 col-md-9 col-sm-9 col-xs-9 list-item-desc">
+                  <h3>Хижа Мальовица<a href="hija_detail.html" role="button" class="btn btn-default pull-right">Разгледай</a></h3>
+                  <p>
+                      Намира се в долината на р.Мальовица. Общият капацитет на хижата е 125 места. Водоснабдена, електрифицирана, отоплението е електрическо. Районът разполага със ски-писта, съоръжена с влек. Околностите предлагат много добри условия за алпинизъм. Хижата е пункт от европейския маршрут "Е-4".
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default" id="Хижа Отовица">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 list-item-image">
+                  <img class="img-responsive" src="img/hiji/otovitza.jpg">
+                </div>
+
+                <div class="col-xl-10 col-lg-9 col-md-9 col-sm-9 col-xs-9 list-item-desc">
+                  <h3>Хижа Отовица<a href="hija_detail.html" role="button" class="btn btn-default pull-right">Разгледай</a></h3>
+                  <p>
+                      Разположена е в долината на р.Отовица. Представлява масивна триетажна сграда с капацитет 44 места в стаи със собствени санитарни възли и умивални. Хижата е водоснабдена, електрифицирана, с локално парно отопление. Разполага с ресторант и кафе-сладкарница. Хижата е основно обновена.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default" id="Хижа Пионерска">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 list-item-image">
+                  <img class="img-responsive" src="img/hiji/pionerska.jpg">
+                </div>
+
+                <div class="col-xl-10 col-lg-9 col-md-9 col-sm-9 col-xs-9 list-item-desc">
+                  <h3>Хижа Пионерска<a href="hija_detail.html" role="button" class="btn btn-default pull-right">Разгледай</a></h3>
+                  <p>
+                      Разположена е в м.Голямото селище, Северозападна Рила. Представлява масивна триетажна сграда с капацитет 76 места с етажни санитарни възли и умивални. Хижата е водоснабдена, електрифицирана, с централно отопление. Разполага с туристическа кухня и столова. Има оформено място за паркинг. До хижата се намира ски-писта, съоръжена с влек. .
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script type="text/javascript">
+  $(function() {
+      $('#sel1').on('change', function(e){
+          var region = $(this).val();
+          $('[attr-region]').addClass('hidden');
+          $('[attr-region="'+region+'"]').removeClass('hidden');
+          if (region==""){
+            $('[attr-region]').removeClass('hidden');
+          }
+      });
+  });
+  </script>
+
+
+  <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Copyright © 2017. Owned and created by Teodor Ivanov and Blagoi Anastasov. </p>
+      </div>
+  </footer>
+</html>

@@ -1,0 +1,278 @@
+<html lang="bg">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <!-- CDN resources -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/css/tether.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <title>Planitoto</title>
+  </head>
+
+  <body>
+
+
+              <script>
+              function myFunction() {
+                 var input, filter, id, h3;
+                  input = document.getElementById("myInput");
+                  filter = input.value;
+                  $(".panel-default").hide();
+                  $(".panel-default").each(function(index,item){
+                      if (~item.id.indexOf(filter)) {
+                        $(item).show();
+                      }
+                  });
+              }
+
+
+            </script>
+
+
+    <div class="main-logo col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+      <a href="./index.html">
+        <img class="image-responsive" src="img/logo.png"/>
+      </a>
+    </div>
+    <nav class="navbar navbar-default main-nav col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Начало<span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="marshruti.html">Маршрути</a></li>
+            <li><a href="hiji.html">Хижи</a></li>
+            <li><a href="#">Вход с Facebook</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+
+          <!-- filters -->
+          <div class="row filters">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="form-group">
+                <select class="form-control" id="sel1">
+                  <option value="">Избери регион</option>
+                  <option>Пирин</option>
+                  <option>Рила</option>
+                  <option>Родопи</option>
+                  <option>Стара планина</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="form-group">
+                  <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 less-padding">
+                    <input type="text" id="myInput" onkeyup="myFunction()" class="form-control" placeholder="Търсете по име" title="Type in a name">
+                  </div>
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 less-padding">
+                    <button type="button" class="btn btn-default">Търси</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- /filters -->
+
+        <div class="item-list">
+          <div class="panel panel-default" id="Кобилска планина и в. Бели Камък" attr-region="Пирин">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 list-item-image">
+                  <img class="img-responsive" src="img/marshruti/1.jpg"/>
+                </div>
+
+                <div class="col-xl-10 col-lg-9 col-md-9 col-sm-9 col-xs-9 list-item-desc">
+                  <h3>Кобилска планина и в. Бели Камък<a href="marshrut_detail.html" role="button" class="btn btn-default pull-right">Разгледай</a></h3>
+                  <p>
+                    Този маршрут ще ни отведе в планинската област Краище до една от малко посещаваните български планини - Кобилска.
+                    Планината е разположена на българо- сръбската граница. За да придобием представа за особеностите на планината ще посетим уникални малки карстови езера, разположени върху връх!
+                    Маршрутът ще ни отведе до най-високата точка на доскоро непознатият в планинарските среди първенец връх Бели камък (1362 м).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default" id="Банско - хижа Демяница – хижа Беговица - хижа Яне Сандански" attr-region="Пирин">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 list-item-image">
+                  <img class="img-responsive" src="img/marshruti/qnesandanski.jpg"/>
+                </div>
+
+                <div class="col-xl-10 col-lg-9 col-md-9 col-sm-9 col-xs-9 list-item-desc">
+                  <h3>Банско - хижа Демяница – хижа Беговица - хижа Яне Сандански<a href="marshrut_detail.html" role="button" class="btn btn-default pull-right">Разгледай</a></h3>
+                  <p>
+Продължителността на маршрута е 11 часа. Изходен пункт е входа на Национален парк Пирин. Следвате синята маркировка. Тръгвате в посока към разклона за хлораторното отделение на ВиК, минавате над почивна станция Пирин и хижа Рай. След Латата на разклона при трансформатора на почивния дом, поемате към разклона за местността Тодорова орница. Поемате по отбивката за пряката пътека над Тодорова орница. По тази пътека стигате до Юленския мост. Продължавате да следите синята маркировка и стигате над местността Главите, на завоя тръгвате по отбивката за пряката пътека към хижа Демяница. Стигайки до хижата може да направите малка почивка и да продължите към разклона за Валявишките езера. Следвайки маркировката, по разклона за Валявица продължавате прехода напред към местността Тияците (представлява няколко поляни с внушителни челни морени образувани при отстъпването на някогашния Демянишки ледник). От Тияците тръгвате към разклона за Превалските езера (Демянишки езера). След това поемате към седловината Мозговишката порта и Беговишката порта за да стигнете до разклона за хижа Пирин. От него продължавате до хижа Беговица и от там до последната точка на прехода - хижа Яне Сандански.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default" id="хижа Вихрен - хижа Демяница" attr-region="Пирин">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 list-item-image">
+                  <img class="img-responsive" src="img/marshruti/vihren.jpg"/>
+                </div>
+
+                <div class="col-xl-10 col-lg-9 col-md-9 col-sm-9 col-xs-9 list-item-desc">
+                  <h3>хижа Вихрен - хижа Демяница<a href="marshrut_detail.html" role="button" class="btn btn-default pull-right">Разгледай</a></h3>
+                  <p>
+Изходен пункт за маршрута е хижа Вихрен, която се намира се на левия бряг на река Бъндерица. Надморската височина е 1950м. По време на прехода следете зелената маркировка. Продължавате до разклоните за Равнако и за Дългото езеро. По този път стигате до разклона за Василяшките езера, които се намират над хижа Демяница. Продължавайки надолу пресичате реката, която идва от Василишките езера и стигате до хижа Демяница. Продължителността на прехода е 4 часа.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="panel panel-default" id="Рилски манастир - рида Баучер - хижа Иван Вазов " attr-region="Рила">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 list-item-image">
+                  <img class="img-responsive" src="img/marshruti/ivanvazovrila.jpg"/>
+                </div>
+
+                <div class="col-xl-10 col-lg-9 col-md-9 col-sm-9 col-xs-9 list-item-desc">
+                  <h3>Рилски манастир - рида Баучер - хижа Иван Вазов <a href="marshrut_detail.html" role="button" class="btn btn-default pull-right">Разгледай</a></h3>
+                  <p>
+Изходен пункт на маршрута е западния вход на Рилския манастир, точно пред голямата карта на маркировката в района. Може да стигнете с автобус от Дупница.
+Широка алея навлиза в гората. Вдясно е гробът на Джеймс Баучер. Алеята има съвсем плавен наклон и продължава около 45 минути из гората. На няколко места вляво и вдясно се отделят подобни пътеки, затова трябва да следите маркировката - червена и жълта. Ще стигнете до маркировъчен кол, откъдето пътеката рязко извива надясно и започва стръмно изкачване. При кола се разкрива красива гледка към долините на Рилска и Илийна река. Пресичат се няколко полянки и след около 30 минути гората свършва. Билото на рида Баучър се очертава все по-ясно.
+На около 3 часа ходене от Рилския манастир се стига до заравненост, където лятото има кошари. От това място лятната пътека се отбива наляво (НЕ е подходяща през зимата), а коловете продължават нагоре по самото било. Редуват се стръмни изкачвания с леки спускания. Трябва да следите коловете и ръба на рида. След около час и половина коловете продължават вдясно от досегашната посока на движение и започва подсичане почти по хоризонтала. Постепенно се слиза в горната част на долината на река Друшлявица - голямата заравненост Топилата. Ще стигнете до разклон - надясно е пътят за основното било и хижа Мальовица, а напред (северозапад) за хижа Иван Вазов.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default" id="В. Търново – Гарга баир – село Арбанаси – В. Търново" attr-region="Стара планина">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 list-item-image">
+                  <img class="img-responsive" src="img/marshruti/stara.jpg"/>
+                </div>
+                <div class="col-xl-10 col-lg-9 col-md-9 col-sm-9 col-xs-9 list-item-desc">
+                  <h3>В. Търново – Гарга баир – село Арбанаси – В. Търново<a href="marshrut_detail.html" role="button" class="btn btn-default pull-right">Разгледай</a></h3>
+                  <p>
+ При тази обиколка изходната точка е квартал "Асенов". От него туристическата пътека се изкачва на хълма Гарга баир, под скалния венец, на който криволичи шосето за село Арбанаси и град Горна Оряховица. Самият хълм е с над 100 метра по-висок от хълмовете Царевец и Трапезица, поради което от него се открива изключително красива панорамна гледка към старата част на Велико Търново. От Гарга баир се влиза в село Арбанаси, където могат да се разгледат част от неговите забележителности. От селото се продължава по маркирана пътека на юг, която води до асфалтовия път за местността Ксилифор. По този път се достига до квартал "Мавриков", а от там и до изходният пункт на обиколката в квартал "Асенов".
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="panel panel-default" id="хижа Персенк – летовище Бяла Черква" attr-region="Родопи">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 list-item-image">
+                  <img class="img-responsive" src="img/marshruti/persenk.jpg"/>
+                </div>
+
+                <div class="col-xl-10 col-lg-9 col-md-9 col-sm-9 col-xs-9 list-item-desc">
+                  <h3>хижа Персенк – летовище Бяла Черква<a href="marshrut_detail.html" role="button" class="btn btn-default pull-right">Разгледай</a></h3>
+                  <p>
+За изкачването му се поема вдясно по стръмната пътечка, която след 10 минути извежда до висока скала. Пътеката свива вдясно и стръмно поема нагоре. След 8 минути се стига до върха. Разкрива се най-близката и красива гледка към Персенците и Модър на изток и Баташки Снежник на запад. По тясна пътечка, спускаща се на север се слиза на пътя, по който се достига седловина Митницата. Получила е името си от митническия пропускателен пункт, който е имало тук до 1912г. От хижа Персенк до седловината се стига за 45 минути, ако не се изкачва връх Червен. По пътя, на север се стига до Прангов чучур – поляна с чешма. Продължава се нагоре до седловината Хаджийца. Оттук по пътя след 4 кмилометра се стига до село Лилково. От седловината на североизток поема маркирана пътека, която подсича връх Св. Илия (1705м.), излиза на поляните между местност Св. Атанас и карстовия рид Кукулек, изкачва се на рида, свива по билото му на изток и стига до чешма. От нея се продължава по пътеката на североизток. Стига се до стар горски път, който извежда до местността Емерлийца. Разкрива се гледка към Персенците. Пътеката минава криволичейки през гора, подсича връх Кюмюрлютепе откъм изток и слиза в североизточната част на местност Башмандра. Тя представлява обширна поляна, обкръжена с вековна иглолистна гора. През нея лъкатуши малка рекичка. Оттук пътеката върви на изток, обикаля връх Преспа (1584м.) откъм изтчната страна и се спуска до пътя, свързващ летовище Бяла черква с местността Черешка. Поема се на север по него, изкачва се седлото между върховете Преспа и Бяла Черква и след 10 минути се стига до летовище Бяла черква.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default" id="Сапарева баня – Паничище – Седемте рилски езера" attr-region="Рила">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 list-item-image">
+                  <img class="img-responsive" src="img/marshruti/saparevabanq.jpg"/>
+                </div>
+
+                <div class="col-xl-10 col-lg-9 col-md-9 col-sm-9 col-xs-9 list-item-desc">
+                  <h3>Сапарева баня – Паничище – Седемте рилски езера<a href="marshrut_detail.html" role="button" class="btn btn-default pull-right">Разгледай</a></h3>
+                  <p>
+                        Изходен пункт на маршрута е Сапарева баня, докъдето се стига с автобус от Дупница. От центъра на града тръгва пътека за Паничище – 2 часа ходене по дъното на долина. Пътеката за Седемте рилски езера, хижа Скакавица и хижа Пионерска тръгва вляво, зад посетителския център. Маркировката е много добра.
+                        Почти по равно навлизате в иглолистна гора. Ще излезете на черен път, по който надясно се стига за около 10 минути в долния край на пистата на Паничище. Оттам се продължава наляво по асфалтов път, като след около километър вдясно се отклонява пряка пътека. Излиза се отново на пътя и след 15 минути вървене по него тръгвате надясно по стръмна туристическа пътека. Всички разклони са маркирани. Излиза се в местността Зелени преслап (на около 45 минути от Паничище).
+                        Маршрутът продължава надясно и нагоре по хубав черен път. Стига се до мочурливо място с табелка за вход в резерват Скакавица. Наляво се отделя пътека за хижа Пионерска. Продължавате напред по пътя. След около 200 метра вдясно се отделя друга пътека - за хижа Скакавица. Подминавате разклона и започвате плавно изкачване по черния път през гората. След около 1 час, по пътя вляво, отново се отделя пътека за хижа Пионерска. Малко след това пътят завива рязко надясно и изведнъж става по-стръмен. Гората постепенно преминава в клек, а маркировката става колове с азимутни табелки.
+                        Изкачването продължава стръмно почти право на юг (при мъгла и дъжд се следят азимутите). Излиза се от клека и веднага се вижда хижа Рилски езера.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default" id="Бачковски манастир – хижа Марциганица" attr-region="Родопи">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 col-xs-3 list-item-image">
+                  <img class="img-responsive" src="img/marshruti/bachkovo.jpg"/>
+                </div>
+
+                <div class="col-xl-10 col-lg-9 col-md-9 col-sm-9 col-xs-9 list-item-desc">
+                  <h3>Бачковски манастир – хижа Марциганица<a href="marshrut_detail.html" role="button" class="btn btn-default pull-right">Разгледай</a></h3>
+                  <p>
+Тръгва се от входа на Бачковски манастир на изток, минава се край костницата и се стига до долина с красиви поляни, обградени със стръмни, почти отвесни склонове. Тук се намира Аязмото. След 20 минути се стига до няколко черковни постройки и малка църква. Горе високо с е вижда отвесния скат на Червената стена. Върви се нагоре по дола, който на места се стеснява до 2 метра. След 40 минути долът се изоставя и започва стръмно серпентинно изкачване. Стига се до местността Селище - открита наклонена поляна. От тук до хижа Марциганица се отива по маркировка от железни стълбове, идващи от хижа Безово.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+
+<script type="text/javascript">
+$(function() {
+    function getParameterByName(name) {
+      name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+      var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+          results = regex.exec(location.search);
+      return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+    $('#sel1').on('change', function(e){
+        var region = $(this).val();
+        $('div.panel-default').addClass('hidden');
+        $('[attr-region="'+region+'"]').removeClass('hidden');
+        if (region==""){
+          $('[attr-region]').removeClass('hidden');
+        }
+    });
+
+    var region = getParameterByName('region');
+    $('#sel1').val(region).trigger('change');
+});
+</script>
+
+  <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Copyright © 2017. Owned and created by Teodor Ivanov and Blagoi Anastasov. </p>
+      </div>
+  </footer>
+</html>

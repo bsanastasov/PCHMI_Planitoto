@@ -1,0 +1,97 @@
+<html lang="bg">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <!-- CDN resources -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/css/tether.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <title>Planitoto</title>
+  </head>
+
+  <body>
+    <div class="main-logo col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+      <a href="./index.html">
+        <img class="image-responsive" src="img/logo.png"/>
+      </a>
+    </div>
+    <nav class="navbar navbar-default main-nav col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Начало<span class="sr-only">(current)</span></a></li>
+            <li><a href="marshruti.html">Маршрути</a></li>
+            <li><a href="hiji.html">Хижи</a></li>
+            <li><a href="#">Вход с Facebook</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+          <div class="panel panel-default">
+            <div class="panel-heading">Запазване на хижа</div>
+            <div class="panel-body">
+              <form action="#">
+                <div class="form-group">
+                  <label for="name1">Име:</label>
+                  <input type="input" class="form-control" id="name1" name="name1">
+                </div>
+                <div class="form-group">
+                  <label for="name2">Презиме:</label>
+                  <input type="input" class="form-control" id="name2" name="name2">
+                </div>
+                <div class="form-group">
+                  <label for="name3">Фамилия:</label>
+                  <input type="input" class="form-control" id="name3" name="name3">
+                </div>
+                <div class="form-group">
+                  <label for="phone">Телефон:</label>
+                  <input type="input" class="form-control" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                  <label for="date-from">Дата от:</label>
+                  <input type="date" class="form-control" id="date-from" name="date-from">
+                </div>
+                <div class="form-group">
+                  <label for="date-to">Дата до:</label>
+                  <input type="date" class="form-control" id="date-to" name="date-to">
+                </div>
+                <div class="form-group">
+                  <label for="people-count">Брой места:</label>
+                  <input type="input" class="form-control" id="people-count" name="people-count">
+                </div>
+                <button type="submit" class="btn btn-default">Резервирай</button>
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
+  </body>
+
+  <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Copyright © 2017. Owned and created by Teodor Ivanov and Blagoi Anastasov. </p>
+      </div>
+  </footer>
+</html>
